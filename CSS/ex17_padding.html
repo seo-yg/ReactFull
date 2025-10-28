@@ -4,6 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            background-color : #f7f9fc;
+            padding : 20px;
+
+
+        }
+        .box{
+            width : 200px;
+            margin-bottom : 20px;
+            background : #74b9ff;
+            color : white;
+            border : 2px solid #0984e3;
+        }
+        .padding-top{
+            padding-top : 30px;
+        }
+        .padding-right{
+            padding-right : 30px;
+        }
+        .padding-bottom{
+            padding-bottom : 30px;
+        }
+        .padding-left{
+            padding-left : 30px;
+        }
+        .padding-all{
+            padding : 30px;
+        }
+        .padding-four{
+            padding : 10px 20px 30px 40px; /* 시계방향으로 top right bottom left */
+        }
+        .outer{
+            background : #74b9ff;
+            color : white;
+            width: 300px;
+            margin: 20px;
+        }
+    </style>
 </head>
 <body>
     <h2>Padding 속성 실습</h2>
@@ -13,5 +52,14 @@
     <div class="box padding-left">padding-left : 30px</div>     
     <div class="box padding-all">padding-all : 30px</div>
     <div class="box padding-four">padding-four : 10px 20px 30px 40px</div>
+    <hr>
+    
+    <h2>중첩된 요소의 padding</h2>
+    <div class="outer">
+        <div class="inner">
+
+        </div>
+    </div>
+
 </body>
 </html>
