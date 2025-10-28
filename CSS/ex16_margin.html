@@ -21,6 +21,22 @@
             
         }
         /* 요소의 레이아웃을 배치하는 용도로 쓰는게 아니라 요소끼리의 간격을 조절하는 용도로 쓰는것이 좋다. */
+        .outer{
+            width  : 300px;
+            background : pink;
+            margin : 50px auto;
+            border-radius : 10px;
+            color : white;
+            padding-bottom : 10px;
+
+        }
+        .inner{
+            width : 200px;
+            background : #0985e3;
+            border-radius : 8px;
+            padding : 20px;
+            margin : 30px;
+        }
     </style>
 </head>
 <body>
@@ -29,7 +45,14 @@
     <div class="base-box box-right">margin-right : 100px</div>
     <div class="base-box box-bottom">margin-bottom : 60px</div>    
     <div class="base-box box-left">margin-left : 100px</div>
-
+    <hr>
+    <h2>중첩된 요소의 margin</h2>
+    <div class="outer">
+        부모박스
+        <div class="inner">
+            자식박스(margin : 40px)<br>
+            부모 padding이 없으면 어떻게 될까?
+        </div>
 
 
 
