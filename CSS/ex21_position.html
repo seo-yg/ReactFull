@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="box.css">
+    <style>
+     .static{
+        background: pink;
+        position: static;
+    }
+
+    .relative{
+        background: lightblue;
+        position: relative;
+        top: 20px;
+        left: 20px;
+    }
+    .absolute-parent{
+        position: relative;
+        background: lightgreen;
+        width: 250px;
+        height: 200px;
+        margin:20px;
+    }
+    .absolute-child{
+        position: absolute;
+        background: orange;
+        top: 50px;
+        left: 50px;
+    }
+
+    .fixed{
+        background : lightgoldenrodyellow;
+        position: fixed;
+        bottom  : 20px;
+        right : 20px;
+    }
+    </style>
+</head>
+<body>
+    <div class="box static"></div>
+    <div class="box relative">relative</div>
+
+    <div class="box absolute-parent">
+        부모(div)
+        <div class="box absolute-child">
+            자식(div)</div>
+        </div>
+    <div class="box fixed">fixed</div>
+</body>
+</html>
